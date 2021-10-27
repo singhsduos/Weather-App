@@ -1,0 +1,26 @@
+/*
+ ______________________________________________
+|                                              |
+|     DEFAULT BODY AND OTHER CSS TAG           |
+|______________________________________________|
+*/
+
+*,
+::after,
+::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --blue-theme: #d2e1f6;
+  --lightBlue-shade: #e7effc;
+  --font-shade: #fff;
+  --light-fontColor: #a1b1ca;
+  --darkBlue-shade: #6e98fe;
+  --currentSong-color: #d3dff5;
+  --btn-shadow: #bbbbbb;
+  --songFont-color: #6c7a94;
+  --btn-angleShadow: rgb(148, 148, 148);
+}
