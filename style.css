@@ -58,6 +58,7 @@ body {
   width: 258px;
   margin: auto;
   margin-top: 0.5rem;
+  opacity: 0.5;
 }
 
 .upperDiv {
@@ -77,6 +78,7 @@ body {
   left: 0;
   right: 0;
   top: 0;
+  border: 2px solid cyan;
 }
 
 .headingAndIcon {
@@ -172,4 +174,71 @@ span {
   font-size: 10px;
   opacity: 0.8;
   margin-top: 0.2rem;
+}
+
+.todaysTempDiv,
+.listTodaysTempDiv {
+  width: 245px;
+  margin: auto;
+  margin-top: 0.5rem;
+}
+
+.todayHeadingDiv {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.today {
+  opacity: 0.9;
+}
+
+.sevendays {
+  font-size: 10px;
+  opacity: 0.8;
+}
+
+.todaysTempList,
+.todaysTimeTempDiv {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.todaysTimeTempDiv {
+  flex-direction: column;
+  justify-content: center;
+  border: 2px solid rgba(85, 85, 131, 0.699);
+  border-radius: 20px;
+  padding: 0.5rem 0.7rem;
+}
+
+.timeTemp,
+.particularTime {
+  font-weight: 700;
+  font-size: 14px;
+}
+
+.particularTime {
+  font-size: 10px;
+  opacity: 0.5;
+}
+
+.timeWheaterIcon,
+.particularTime {
+  margin-top: 5px;
+}
+
+.presentColor {
+  background: rgb(17, 169, 255);
+  background: linear-gradient(
+    127deg,
+    rgba(17, 169, 255, 1) 0%,
+    rgba(89, 192, 246, 1) 100%
+  );
+  border-radius: 2px solid cyan;
+}
+
+.presentColor .particularTime {
+   opacity: 0.9;
 }
