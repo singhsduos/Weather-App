@@ -209,7 +209,7 @@ span {
   overflow: hidden;
   overflow-x: auto;
   scrollbar-width: none; /* Firefox */
-  -ms-overflow-style: none; 
+  -ms-overflow-style: none;
 }
 
 ::-webkit-scrollbar {
@@ -258,4 +258,53 @@ span {
 
 .presentColor .particularTime {
   opacity: 0.9;
+}
+
+.upperDiv {
+  height: 240px;
+}
+
+.upperDivShadow {
+  height: 247px;
+}
+
+.tempDesc {
+  margin-top: 0rem;
+}
+
+.skyImage {
+  height: 5rem;
+  width: 6rem;
+}
+
+.skyImgDiv,
+.tempDesc,
+.tempDegree{
+  margin-top: 0.5rem;
+}
+.timeAndDate{
+    margin-top: 0;
+}
+
+.weatherDesc {
+  margin-top: 1.5rem;
+}
+
+.tempHeading {
+  font-size: 3rem;
+}
+
+span {
+    font-size: 1rem;
+    margin-top: -2rem;
+}
+
+.wheatherHeading {
+  font-size: 0.8rem;
+}
+
+.specialDiv {
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
