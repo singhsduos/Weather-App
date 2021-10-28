@@ -78,3 +78,98 @@ body {
   right: 0;
   top: 0;
 }
+
+.headingAndIcon {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 1rem 0rem;
+}
+
+.mapIcon {
+  margin: 0 0.3rem;
+}
+
+.city {
+  margin: 0 0.2rem;
+  font-weight: 600;
+}
+
+.skyImgDiv,
+.tempDesc,
+.tempDegree,
+.timeAndDate,
+.weatherDesc {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 1.5rem;
+}
+
+.skyImage {
+  height: 12rem;
+  width: 13rem;
+}
+
+.tempDesc {
+  margin-top: -2rem;
+  flex-direction: column;
+}
+
+.tempHeading {
+  font-size: 5rem;
+  font-weight: 700;
+  display: inline-block;
+}
+
+.wheatherHeading {
+  margin-top: -0.5rem;
+}
+
+span {
+  font-size: 2rem;
+  font-weight: 300;
+  margin-top: -3rem;
+}
+
+.timeAndDate {
+  margin-top: 0rem;
+}
+
+.weekDay,
+.day,
+.months {
+  font-size: 11px;
+  margin: 0rem 0.2rem;
+}
+
+.weatherDesc {
+  justify-content: space-around;
+  margin-top: 2rem;
+}
+
+.windIconDiv,
+.humidityIconDiv,
+.rainIconDiv {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.windValue,
+.humidityValue,
+.rainValue {
+  font-weight: 700;
+  font-size: 13px;
+  margin-top: 0.2rem;
+}
+
+.windHeading,
+.humidityHeading,
+.rainHeading {
+  font-weight: 200;
+  font-size: 10px;
+  opacity: 0.8;
+  margin-top: 0.2rem;
+}
