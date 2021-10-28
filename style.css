@@ -14,13 +14,67 @@
 }
 
 :root {
-  --blue-theme: #d2e1f6;
+  --darkBlue-theme: #000918;
   --lightBlue-shade: #e7effc;
   --font-shade: #fff;
-  --light-fontColor: #a1b1ca;
-  --darkBlue-shade: #6e98fe;
-  --currentSong-color: #d3dff5;
   --btn-shadow: #bbbbbb;
   --songFont-color: #6c7a94;
   --btn-angleShadow: rgb(148, 148, 148);
+}
+
+body {
+  background: #4e66fc;
+  background: linear-gradient(to right, #4e66fc, #6dd5ed);
+  height: 100vh;
+  margin: auto;
+  width: 80%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+  color: var(--font-shade);
+}
+
+.container {
+  position: relative;
+  width: 300px;
+  height: 615px;
+  border-radius: 1.3rem;
+  -webkit-border-radius: 46px;
+  border-radius: 46px;
+  -webkit-box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+  box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+  background-color: var(--darkBlue-theme);
+}
+
+.upperDivShadow {
+  background: rgb(19, 75, 107);
+  margin: 0 auto;
+  z-index: 1;
+  height: 480px;
+  border-radius: 2.5rem;
+  border-bottom-left-radius: 1.8rem;
+  border-bottom-right-radius: 1.8rem;
+  width: 258px;
+  margin: auto;
+  margin-top: 0.5rem;
+}
+
+.upperDiv {
+  height: 471px;
+  border-radius: 2.5rem;
+  width: 285px;
+  margin: auto;
+  margin-top: 0.5rem;
+  background: rgb(17, 169, 255);
+  background: linear-gradient(
+    127deg,
+    rgba(17, 169, 255, 1) 0%,
+    rgba(89, 192, 246, 1) 100%
+  );
+  z-index: 10;
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 0;
 }
