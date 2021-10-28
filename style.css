@@ -205,12 +205,29 @@ span {
   justify-content: space-around;
 }
 
+.todaysTempList {
+  overflow: hidden;
+  overflow-x: auto;
+  scrollbar-width: none; /* Firefox */
+  -ms-overflow-style: none; 
+}
+
+::-webkit-scrollbar {
+  width: 0; /* Remove scrollbar space */
+  background: transparent; /* Optional: just make scrollbar invisible */
+}
+/* Optional: show position indicator in red */
+::-webkit-scrollbar-thumb {
+  background: transparent;
+}
+
 .todaysTimeTempDiv {
   flex-direction: column;
   justify-content: center;
   border: 2px solid rgba(85, 85, 131, 0.699);
   border-radius: 20px;
   padding: 0.5rem 0.7rem;
+  margin: 0px 5px;
 }
 
 .timeTemp,
@@ -240,5 +257,5 @@ span {
 }
 
 .presentColor .particularTime {
-   opacity: 0.9;
+  opacity: 0.9;
 }
