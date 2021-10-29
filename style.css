@@ -143,7 +143,6 @@ body {
   transition: 0.3s ease-in;
 }
 
-
 .skyImage {
   height: 12rem;
   width: 13rem;
@@ -161,7 +160,7 @@ body {
 }
 
 .tempHeading {
-  font-size: 5rem;
+  font-size: 4rem;
   font-weight: 700;
   display: inline-block;
   transition: 0.3s ease-in;
@@ -170,13 +169,19 @@ body {
 .wheatherHeading {
   margin-top: -0.5rem;
   transition: 0.3s ease-in;
+  text-transform: capitalize;
 }
 
 span {
   font-size: 2rem;
   font-weight: 300;
-  margin-top: -3rem;
+  margin-top: -1.5rem;
   transition: 0.3s ease-in;
+}
+
+.celcius {
+  font-size: 2rem;
+  font-weight: 300;
 }
 
 .timeAndDate {
@@ -350,8 +355,8 @@ span {
 }
 
 .current {
-  font-size: 1rem;
-  margin-top: -2rem;
+  font-size: 1.5rem;
+  margin-top: -1rem;
   transition: 0.3s ease-in;
 }
 
@@ -404,5 +409,5 @@ span {
 .weekDayList,
 .iconAndWeatherDesc,
 .tempList {
-  padding: 0rem 0.5rem;
+  padding: 0rem 1.5rem;
 }

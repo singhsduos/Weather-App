@@ -7,9 +7,10 @@ const months = document.querySelector('.months');
 const city = document.querySelector('.city');
 const tempHeading = document.querySelector('.tempHeading');
 const wheatherHeading = document.querySelector('.wheatherHeading');
+const myAPIKey = "bf360ddec28a21146e2d6a98349204bf";
 
 const windValue = document.querySelector('.windValue');
-const humidityValue = document.querySelector('.humidityValue');
+const humidityValue = document.getElementById('humidityValue');
 const rainValue = document.querySelector('.rainValue');
 
 
@@ -103,6 +104,7 @@ function updateDate(dWeek, dNum, dMonth) {
     day.innerHTML = checkNum(dNum);
 }
 
+// EVENT LISTENER
 sevendays.addEventListener('click', sevednDaysEvent);
 backArrow.addEventListener('click', backArrowEvent);
 
@@ -147,5 +149,76 @@ function backArrowEvent() {
     specialDiv.classList.remove('specialDiv-curr');
     tempHeading.classList.remove('tempHeading-curr');
     wheatherHeading.classList.remove('wheatherHeading-curr');
+}
+
+let api;
+let api2;
+window.addEventListener('load', () => {
+    if (navigator.geolocation) {
+        navigator.geolocation.getCurrentPosition(onSuccess, onError);
+        navigator.geolocation.getCurrentPosition(onSuccessor, onError);
+    } else {
+        alert("Your browser does not support Geolocation");
+    }
+});
+
+function onSuccess(position) {
+    const { latitude, longitude } = position.coords;
+    api = `https://api.openweathermap.org/data/2.5/onecall?lat=${latitude}&lon=${longitude}&units=metric&appid=${myAPIKey}`;
+    fetchData();
+}
+
+function onSuccessor(position) {
+    const { latitude, longitude } = position.coords;    
+    api2 = `https://api.openweathermap.org/data/2.5/weather?lat=${latitude}&lon=${longitude}&units=metric&appid=${myAPIKey}`
+    fetchDataP();
+}
+
+function onError(error) {
+    city.innerText = error.message;
+}
+
+
+function fetchDataP() {
+    city.innerText = "Getting details...";
+    fetch(api2).then(res => res.json()).then(result => cityDetails(result)).catch(() => {
+        city.innerText = "Something went wrong";
+    });
+    // fetch(api).then(res => res.json()).then(result => console.log(result));
+}
+
+
+function fetchData() {
+    city.innerText = "Getting details...";
+    fetch(api).then(res => res.json()).then(result =>{
+        weatherDetails(result)
+    }).catch(() => {
+        city.innerText = "Something went wrong";
+    });
+    fetch(api).then(res => res.json()).then(result => console.log(result));
+}
+
+function weatherDetails(info) {
+   
+       
+        humidityValue.textContent = info.current.humidity + "%";
+        console.log(info);
+
+    
+}
+
+function cityDetails(info) {
+    if (info.cod == "404") {
+        city.innerText = `${inputField.value} isn't a valid city name`;
+    } else {
+        city.innerText = info.name;
+        // humidityValue.textContent = info.current.humidity + "%";
+        tempHeading.textContent = info.main.temp;
+        wheatherHeading.textContent = info.weather[0].description;
+        windValue.textContent = Math.floor((info.wind.speed) * 3.6) + " km/h"
+        // rainValue.textContent = info.rain[0];
+        console.log(info);
+
+    }
 }
 
