@@ -59,6 +59,7 @@ body {
   margin: auto;
   margin-top: 0.5rem;
   opacity: 0.5;
+  transition: 0.3s ease-in;
 }
 
 .upperDiv {
@@ -79,6 +80,7 @@ body {
   right: 0;
   top: 0;
   border: 2px solid cyan;
+  transition: 0.3s ease-in;
 }
 
 .arrowAndCityDiv {
@@ -93,24 +95,34 @@ body {
   border-radius: 50%;
   height: 2rem;
   width: 2rem;
-  display: flex;
   justify-content: center;
   align-items: center;
   cursor: pointer;
   opacity: 0.7;
+  display: none;
 }
 
 .fa-chevron-left {
   padding: 0.5rem;
 }
 
-.headingAndIcon {
+.dots {
+  display: none;
+}
+
+.headingAndIcon,
+.sevenDaysheadingAndIcon {
   display: flex;
   justify-content: center;
   align-items: center;
 }
 
-.mapIcon {
+.sevenDaysheadingAndIcon {
+  display: none;
+}
+
+.mapIcon,
+.calendarIcon {
   margin: 0 0.3rem;
 }
 
@@ -128,32 +140,42 @@ body {
   justify-content: center;
   align-items: center;
   margin-top: 1.5rem;
+  transition: 0.3s ease-in;
 }
 
 .skyImage {
   height: 12rem;
   width: 13rem;
+  transition: 0.3s ease-in;
+}
+
+.specialDiv {
+  transition: 0.3s ease-in;
 }
 
 .tempDesc {
   margin-top: -2rem;
   flex-direction: column;
+  transition: 0.3s ease-in;
 }
 
 .tempHeading {
   font-size: 5rem;
   font-weight: 700;
   display: inline-block;
+  transition: 0.3s ease-in;
 }
 
 .wheatherHeading {
   margin-top: -0.5rem;
+  transition: 0.3s ease-in;
 }
 
 span {
   font-size: 2rem;
   font-weight: 300;
   margin-top: -3rem;
+  transition: 0.3s ease-in;
 }
 
 .timeAndDate {
@@ -284,64 +306,78 @@ span {
 
 /* Changes on clicking 7 Days Temp */
 
-.upperDiv-curr{
+.upperDiv-curr {
   height: 250px;
+  transition: 0.3s ease-in;
 }
 
 .upperDivShadow-curr {
   height: 257px;
+  transition: 0.3s ease-in;
 }
 
 .tempDesc-curr {
   margin-top: 0rem;
+  transition: 0.3s ease-in;
 }
 
 .skyImage-curr {
   height: 5rem;
   width: 6rem;
+  transition: 0.3s ease-in;
 }
 
 .skyImgDiv-curr,
 .tempDesc-curr,
 .tempDegree-curr {
   margin-top: 0.5rem;
+  transition: 0.3s ease-in;
 }
 .timeAndDate-curr {
   margin-top: 0;
+  transition: 0.3s ease-in;
 }
 
 .weatherDesc-curr {
   margin-top: 1.5rem;
+  transition: 0.3s ease-in;
 }
 
 .tempHeading-curr {
   font-size: 3rem;
+  transition: 0.3s ease-in;
 }
 
-span .current{
+.current {
   font-size: 1rem;
   margin-top: -2rem;
+  transition: 0.3s ease-in;
 }
 
 .wheatherHeading-curr {
   font-size: 0.8rem;
+  transition: 0.3s ease-in;
 }
 
 .specialDiv-curr {
   display: flex;
   justify-content: center;
   align-items: center;
+  transition: 0.3s ease-in;
 }
 
 /* .todaysTempDiv {
   display: none;
 } */
 
-
 /* Seven Days Temp Container */
 
-.sevenDaysContainer{
-    display: none;
+.sevenDaysContainer {
+  display: none;
+}
+
+.sevendays {
+  cursor: pointer;
 }
 
 .perDayDiv,
@@ -366,6 +402,6 @@ span .current{
 
 .weekDayList,
 .iconAndWeatherDesc,
-.tempList{
+.tempList {
   padding: 0rem 0.5rem;
 }
