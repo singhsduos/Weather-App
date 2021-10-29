@@ -104,6 +104,7 @@ function updateDate(dWeek, dNum, dMonth) {
 }
 
 sevendays.addEventListener('click', sevednDaysEvent);
+backArrow.addEventListener('click', backArrowEvent);
 
 
 function sevednDaysEvent() {
@@ -126,3 +127,25 @@ function sevednDaysEvent() {
     tempHeading.classList.add('tempHeading-curr');
     wheatherHeading.classList.add('wheatherHeading-curr');
 }
+
+function backArrowEvent() {
+    todaysTempDiv.style.display = "block";
+    sevenDaysContainer.style.display = "none";
+    backArrow.style.display = "none";
+    dots.style.display = "none";
+    sevenDaysheadingAndIcon.style.display = "none";
+    headingAndIcon.style.display = "flex";
+    upperDiv.classList.remove('upperDiv-curr');
+    upperDivShadow.classList.remove('upperDivShadow-curr');
+    tempDesc.classList.remove('tempDesc-curr');
+    skyImage.classList.remove('skyImage-curr');
+    skyImgDiv.classList.remove('skyImgDiv-curr');
+    tempDegree.classList.remove('tempDegree-curr');
+    timeAndDate.classList.remove('timeAndDate-curr');
+    weatherDesc.classList.remove('weatherDesc-curr');
+    span.classList.remove('current');
+    specialDiv.classList.remove('specialDiv-curr');
+    tempHeading.classList.remove('tempHeading-curr');
+    wheatherHeading.classList.remove('wheatherHeading-curr');
+}
+
