@@ -81,11 +81,33 @@ body {
   border: 2px solid cyan;
 }
 
+.arrowAndCityDiv {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  margin: 1rem 0rem;
+}
+
+.backArrow {
+  border: 2px solid cyan;
+  border-radius: 50%;
+  height: 2rem;
+  width: 2rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  opacity: 0.7;
+}
+
+.fa-chevron-left {
+  padding: 0.5rem;
+}
+
 .headingAndIcon {
   display: flex;
   justify-content: center;
   align-items: center;
-  margin: 1rem 0rem;
 }
 
 .mapIcon {
@@ -260,51 +282,90 @@ span {
   opacity: 0.9;
 }
 
-.upperDiv {
-  height: 240px;
+/* Changes on clicking 7 Days Temp */
+
+.upperDiv-curr{
+  height: 250px;
 }
 
-.upperDivShadow {
-  height: 247px;
+.upperDivShadow-curr {
+  height: 257px;
 }
 
-.tempDesc {
+.tempDesc-curr {
   margin-top: 0rem;
 }
 
-.skyImage {
+.skyImage-curr {
   height: 5rem;
   width: 6rem;
 }
 
-.skyImgDiv,
-.tempDesc,
-.tempDegree{
+.skyImgDiv-curr,
+.tempDesc-curr,
+.tempDegree-curr {
   margin-top: 0.5rem;
 }
-.timeAndDate{
-    margin-top: 0;
+.timeAndDate-curr {
+  margin-top: 0;
 }
 
-.weatherDesc {
+.weatherDesc-curr {
   margin-top: 1.5rem;
 }
 
-.tempHeading {
+.tempHeading-curr {
   font-size: 3rem;
 }
 
-span {
-    font-size: 1rem;
-    margin-top: -2rem;
+span .current{
+  font-size: 1rem;
+  margin-top: -2rem;
 }
 
-.wheatherHeading {
+.wheatherHeading-curr {
   font-size: 0.8rem;
 }
 
-.specialDiv {
+.specialDiv-curr {
   display: flex;
   justify-content: center;
   align-items: center;
+}
+
+/* .todaysTempDiv {
+  display: none;
+} */
+
+
+/* Seven Days Temp Container */
+
+.sevenDaysContainer{
+    display: none;
+}
+
+.perDayDiv,
+.iconAndWeatherDesc {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.perDayDiv {
+  margin: 1.5rem 0rem;
+}
+
+.wheaterIconList {
+  margin-right: 0.5rem;
+}
+
+.weekDayList,
+.weatherDescList {
+  opacity: 0.6;
+}
+
+.weekDayList,
+.iconAndWeatherDesc,
+.tempList{
+  padding: 0rem 0.5rem;
 }
