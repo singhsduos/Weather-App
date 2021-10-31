@@ -154,7 +154,7 @@ function backArrowEvent() {
 
 let api;
 let api2;
-
+    
 window.addEventListener('load', () => {
     if (navigator.geolocation) {
         navigator.geolocation.getCurrentPosition(onSuccessOneCall, onError);
