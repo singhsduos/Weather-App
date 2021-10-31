@@ -10,12 +10,14 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
         integrity="sha512-1ycn6IcaQQ40/MKBW2W4Rhis/DbILU74C1vSrLJxCq57o941Ym01SwNsOMqvEBFlcgUa6xLiPY/NS5R+E6ztJQ=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!-- Google Material Icon -->
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons+Round" rel="stylesheet">
     <title>Weather App</title>
 </head>
 
 <body>
     <div class="container">
+        <!-- UPPER DIV -->
         <div class="upperDivShadow"></div>
         <div class="upperDiv">
             <div class="arrowAndCityDiv">
@@ -50,6 +52,7 @@
                     </div>
                 </div>
             </div>
+            <!-- TODAYS WEATHER CONDITIONS -->
             <div class="weatherDesc">
                 <div class="windIconDiv">
                     <a class="windIcon"><i class="fas fa-wind"></i></a>
@@ -58,18 +61,27 @@
                 </div>
                 <div class="humidityIconDiv">
                     <a class="humidityIcon"><i class="fas fa-tint"></i></a>
-                    <p id="humidityValue" class="humidityValue">26%</p>
+                    <p id="humidityValue" class="humidity">26%</p>
                     <p class="humidityHeading">Humidity</p>
                 </div>
                 <div class="rainIconDiv">
-                    <a class="rainIcon"><i class="fas fa-water"></i></a>
-                    <p class="rainValue">87%</p>
-                    <p class="rainHeading">Chance of rain</p>
+                    <a class="rainIcon">
+                        <i class="material-icons-round" title="Playlist Looped">wb_sunny</i>
+                    </a>
+                    <p class="sunrise">5:00 A.M</p>
+                    <p class="sunriseHeading">Sunrise</p>
+                </div>
+
+                <div class="rainIconDiv">
+                    <a class="rainIcon"><i class="material-icons-round" title="Playlist Looped">flare</i></a>
+                    <p class="sunset">6:00 P.M</p>
+                    <p class="sunsetHeading">Sunset</p>
                 </div>
             </div>
         </div>
 
 
+        <!--UPCOMING 4 HOURS TEMP FORMAT -->
         <div class="todaysTempDiv">
             <div class="todayHeadingDiv">
                 <h3 class="today">Today</h3>
@@ -79,27 +91,27 @@
             <div class="listTodaysTempDiv">
                 <ul class="todaysTempList">
 
-                    <div class="todaysTimeTempDiv">
+                    <div class="todaysTimeTempDiv presentColor">
                         <p class="timeTemp">19<sup>o</sup></p>
-                        <a class="timeWheaterIcon"><i class="fas fa-water"></i></a>
+                        <img alt="icon" class="w-icon timeWheaterIcon">
                         <p class="particularTime">11:00</p>
                     </div>
 
-                    <div class="todaysTimeTempDiv presentColor">
+                    <div class="todaysTimeTempDiv">
                         <p class="timeTemp">22<sup>o</sup></p>
-                        <a class="timeWheaterIcon"><i class="fas fa-wind"></i></a>
+                        <img alt="icon" class="w-icon timeWheaterIcon">
                         <p class="particularTime">12:00</p>
                     </div>
 
                     <div class="todaysTimeTempDiv">
                         <p class="timeTemp">19<sup>o</sup></p>
-                        <a class="timeWheaterIcon"><i class="fas fa-water"></i></a>
+                        <img alt="icon" class="w-icon timeWheaterIcon">
                         <p class="particularTime">11:00</p>
                     </div>
 
                     <div class="todaysTimeTempDiv">
                         <p class="timeTemp">20<sup>o</sup></p>
-                        <a class="timeWheaterIcon"><i class="fas fa-water"></i></a>
+                        <img alt="icon" class="w-icon timeWheaterIcon">
                         <p class="particularTime">11:00</p>
                     </div>
 
@@ -107,70 +119,77 @@
             </div>
         </div>
 
+
+        <!--UPCOMING 7 DAYS TEMP FORMAT -->
         <div class="sevenDaysContainer">
             <ul class="sevenDayList">
-                <div class="perDayDiv">
+                <div class="perDayDiv  currentClass">
                     <h5 class="weekDayList">Mon</h5>
                     <div class="iconAndWeatherDesc">
-                        <a class="wheaterIconList"><i class="fas fa-wind"></i></a>
+                        <img alt="icon" class="w-icon wheaterIconList">
                         <h5 class="weatherDescList">Rainy</h5>
                     </div>
-                    <h5 class="tempList">+20<sup>o</sup></h5>
+                    <h5 class="tempList">+20</h5>
                 </div>
                 <div class="perDayDiv">
                     <h5 class="weekDayList">Tue</h5>
                     <div class="iconAndWeatherDesc">
-                        <a class="wheaterIconList"><i class="fas fa-wind"></i></a>
+                        <img alt="icon" class="w-icon wheaterIconList">
                         <h5 class="weatherDescList">Rainy</h5>
                     </div>
-                    <h5 class="tempList">+20<sup>o</sup></h5>
+                    <h5 class="tempList">+20</h5>
                 </div>
                 <div class="perDayDiv">
                     <h5 class="weekDayList">Wed</h5>
                     <div class="iconAndWeatherDesc">
-                        <a class="wheaterIconList"><i class="fas fa-wind"></i></a>
+                        <img alt="icon" class="w-icon wheaterIconList">
                         <h5 class="weatherDescList">Rainy</h5>
                     </div>
-                    <h5 class="tempList">+20<sup>o</sup></h5>
+                    <h5 class="tempList">+20</h5>
                 </div>
                 <div class="perDayDiv">
                     <h5 class="weekDayList">Thu</h5>
                     <div class="iconAndWeatherDesc">
-                        <a class="wheaterIconList"><i class="fas fa-wind"></i></a>
+                        <img alt="icon" class="w-icon wheaterIconList">
                         <h5 class="weatherDescList">Rainy</h5>
                     </div>
-                    <h5 class="tempList">+20<sup>o</sup></h5>
+                    <h5 class="tempList">+20</h5>
                 </div>
                 <div class="perDayDiv">
                     <h5 class="weekDayList">Fri</h5>
                     <div class="iconAndWeatherDesc">
-                        <a class="wheaterIconList"><i class="fas fa-wind"></i></a>
+                        <img alt="icon" class="w-icon wheaterIconList">
                         <h5 class="weatherDescList">Rainy</h5>
                     </div>
-                    <h5 class="tempList">+20<sup>o</sup></h5>
+                    <h5 class="tempList">+20</h5>
                 </div>
                 <div class="perDayDiv">
                     <h5 class="weekDayList">Sat</h5>
                     <div class="iconAndWeatherDesc">
-                        <a class="wheaterIconList"><i class="fas fa-wind"></i></a>
+                        <img alt="icon" class="w-icon wheaterIconList">
                         <h5 class="weatherDescList">Rainy</h5>
                     </div>
-                    <h5 class="tempList">+20<sup>o</sup></h5>
+                    <h5 class="tempList">+20</h5>
                 </div>
                 <div class="perDayDiv">
                     <h5 class="weekDayList">Sun</h5>
                     <div class="iconAndWeatherDesc">
-                        <a class="wheaterIconList"><i class="fas fa-wind"></i></a>
+                        <img alt="icon" class="w-icon wheaterIconList">
                         <h5 class="weatherDescList">Rainy</h5>
                     </div>
-                    <h5 class="tempList">+20<sup>o</sup></h5>
+                    <h5 class="tempList">+20</h5>
                 </div>
             </ul>
 
         </div>
 
     </div>
-
+     
+    <!-- MOMENT LIBRARY -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.29.1/moment.min.js"
+        integrity="sha512-qTXRIMyZIFb8iQcfjXWCO8+M5Tbc38Qi5WzdPOYZHIlZpzBHG3L3by84BBBOiRGiEb7KKtAOAs5qYdUiZiQNNQ=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+        <!-- MY LOCAL JS FILE -->
     <script src="app.js"></script>
 </body>
 

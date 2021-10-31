@@ -35,6 +35,14 @@ body {
   color: var(--font-shade);
 }
 
+/*
+ ______________________________________________
+|                                              |
+|           UTILITIES CLASSES                  |
+|______________________________________________|
+*/
+
+
 .container {
   position: relative;
   width: 300px;
@@ -210,16 +218,19 @@ span {
 }
 
 .windValue,
-.humidityValue,
-.rainValue {
+.humidity,
+.sunrise,
+.sunset {
   font-weight: 700;
   font-size: 13px;
   margin-top: 0.2rem;
 }
 
+
 .windHeading,
 .humidityHeading,
-.rainHeading {
+.sunriseHeading,
+.sunsetHeading {
   font-weight: 200;
   font-size: 10px;
   opacity: 0.8;
@@ -291,9 +302,13 @@ span {
   opacity: 0.5;
 }
 
-.timeWheaterIcon,
 .particularTime {
-  margin-top: 5px;
+  margin-top: 0px;
+}
+
+.timeWheaterIcon{
+  margin: 0;
+  width: 22px;
 }
 
 .presentColor {
@@ -372,9 +387,6 @@ span {
   transition: 0.3s ease-in;
 }
 
-/* .todaysTempDiv {
-  display: none;
-} */
 
 /* Seven Days Temp Container */
 
@@ -390,7 +402,7 @@ span {
 .iconAndWeatherDesc {
   display: flex;
   align-items: center;
-  justify-content: space-around;
+  justify-content: space-between;
 }
 
 .perDayDiv {
@@ -399,6 +411,7 @@ span {
 
 .wheaterIconList {
   margin-right: 0.5rem;
+  width: 22px;
 }
 
 .weekDayList,
@@ -410,4 +423,26 @@ span {
 .iconAndWeatherDesc,
 .tempList {
   padding: 0rem 1.5rem;
+}
+
+.sevenDayList {
+  width: 285px;
+  margin: auto;
+}
+
+.currentClass {
+  background: rgb(17, 169, 255);
+  background: linear-gradient(
+    127deg,
+    rgba(17, 169, 255, 1) 0%,
+    rgba(89, 192, 246, 1) 100%
+  );
+  height: 1.5rem;
+  border-radius: 0.5rem;
+
+}
+
+.currentClass h5{
+ color: white;
+ opacity: 1;
 }
