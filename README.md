@@ -1,7 +1,7 @@
 # Weather-App
 This is weather web-app which is using Weather API and showing to client side.
 
-### <a href="https://neelesh-weather-app.netlify.app/ target="_blank">**Visit Now 🚀**</a>
+### <a href="https://neelesh-weather-app.netlify.app/" target="_blank">**Visit Now 🚀**</a>
 
 
 ## Things I learend
