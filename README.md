@@ -1,13 +1,13 @@
 # Weather-App
 This is weather web-app which is using Weather API and showing to client side.
 
-### <a href="https://github.com/singhsduos/Weather-App" target="_blank">**Visit Now 🚀**</a>
+### <a href="https://neelesh-weather-app.netlify.app/ target="_blank">**Visit Now 🚀**</a>
 
 
 ## Things I learend
-1. 
-2. 
-3. 
+1. Fetched Weather API
+2. Dynamic Behaviour of Website
+3. Fetching 2 different API's and showing data to client side
 
 
 ## Tech Stack
