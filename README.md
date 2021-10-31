@@ -6,7 +6,7 @@ This is weather web-app which is using Weather API and showing to client side.
 
 ## Things I learend
 1. Fetched Weather API
-2. Dynamic Behaviour of Website
+2. Dynamic Behavior of Website
 3. Fetching 2 different API's and showing data to client side
 
 
